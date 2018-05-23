@@ -23,21 +23,18 @@
             <input id="buttonName" type="submit" value="Ingresar" >
         </form>
     </div>
-    <section class="first-section">
-        <!-- este es el titulo de html -->
-        <h1>Datos curiosos de Breaking Bad</h1>
-        <button id="button-change">Mostrar datos curiosos</button>
-        <!-- aqui se hace magia -->
-        <p id="text">Mirame fijamente</p>
-        <button id="magic">Magic</button>
-
+        <section class="first-section">
+            <!-- este es el titulo de html -->
+            <h1 id="paragraph">Datos cueriosos de Breaking Bad</h1>
+            <!-- Texto que cambia gracias al manejo del DOM -->
+            <button id="button-change">Datos curiosos</button>
      <div id="campoEmail">
         <div>
             <h2>Ingresa tu email por favor</h2>
             <span>Email : </span>
             <span id="email"></span>
         </div>
-        <form id="formEmail" action="#">
+        <form id="formEmail" onsubmit="setEmail()" action="#">
             <!--campo de texto para escribir el email-->
             <input id="inputEmail" type="text">
             <!--llama a la funcion que guarda el nombre-->
