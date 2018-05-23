@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DATOS CURIOSOS</title>
+    <title>Datos Curiosos</title>
     <link rel="stylesheet" href="style.css">
 
 
 </head>
 <body>
-    <h1>Ingresa tu nombre, por favor:</h1>
+    <div id="login">
+        <div>
+            <h2>Ingresa tu nombre por favor</h2>
+            <span>Nombre : </span>
+            <span id="name"></span>
+        </div>
+        <form id="formName" action="#">
+            <!--campo de texto para escribir el nombre-->
+            <input id="inputName" type="text">
+            <!--llama a la funcion que guarda el nombre-->
+            <input id="buttonName" type="submit" value="Ingresar" >
+        </form>
+    </div>
+    <section class="first-section">
+        <!-- este es el titulo de html -->
+        <h1>Datos curiosos de Breaking Bad</h1>
+        <button id="button-change">Mostrar datos curiosos</button>
+        <!-- aqui se hace magia -->
+        <p id="text">Mirame fijamente</p>
+        <button id="magic">Magic</button>
+
+     <div id="campoEmail">
+        <div>
+            <h2>Ingresa tu email por favor</h2>
+            <span>Email : </span>
+            <span id="email"></span>
+        </div>
+        <form id="formEmail" action="#">
+            <!--campo de texto para escribir el email-->
+            <input id="inputEmail" type="text">
+            <!--llama a la funcion que guarda el nombre-->
+            <input id="buttonEmail" type="submit" value="Ingresar">
+        </form>
+    </div>
+   
 
     <script src="app.js"></script>
 </body>
